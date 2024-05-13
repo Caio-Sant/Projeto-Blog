@@ -1,0 +1,12 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: blogappod
+  labels:
+    app: blogappod
+spec:
+  containers:
+    name: blogappod
+    image: caiosantiago/blogapi:latest
+    ports:
+      containerPort: 80

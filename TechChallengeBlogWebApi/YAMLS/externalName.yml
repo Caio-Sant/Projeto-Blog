@@ -1,0 +1,7 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip-service
+spec:
+  type: ExternalName
+  externalNaME: blogapi.com

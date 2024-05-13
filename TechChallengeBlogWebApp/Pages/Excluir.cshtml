@@ -1,0 +1,44 @@
+﻿@page
+@model TechChallengeBlogWebApp.Pages.ExcluirModel
+
+@{
+	ViewData["Title"] = "Excluir";
+}
+
+<h1>Excluir</h1>
+
+<div>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.NoticiaModel.Titulo)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.NoticiaModel.Titulo)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.NoticiaModel.Conteudo)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.NoticiaModel.Conteudo)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.NoticiaModel.DataPublicacao)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.NoticiaModel.DataPublicacao)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.NoticiaModel.Autor)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.NoticiaModel.Autor)
+		</dd>
+	</dl>
+
+	<form method="post">
+		<input type="hidden" asp-for="NoticiaModel.Id" />
+		<input type="submit" value="Excluir" class="btn btn-danger" /> | 
+		<a asp-page="Index">Voltar</a>
+	</form>
+</div>
